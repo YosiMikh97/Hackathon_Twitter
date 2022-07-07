@@ -6,6 +6,7 @@
 }
 body {
     display: flex;
+    padding: 0 10vw;
 }
 section {
     border: 2px solid black;
@@ -13,17 +14,28 @@ section {
 #navbar {
     width: 20vw;
     height: 100vh;
+    /* position: fixed; */
 }
 #main {
-    width: 60vw;
+    width: 40vw;
+    height: 100vh;
+    overflow: scroll;
+    position: relative;
 }
 #right {
     width: 20vw;
     height: 100vh;
+    overflow: scroll;
+}
+#mainnav {
+    position: fixed;
+    width: 40vw;
+    padding: 0 2vw;
 }
 .mainnavul {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     height: 7vh;
 }
 .mainnavli {
@@ -32,4 +44,19 @@ section {
 a {
     text-decoration: none;
     color: black;
+}
+.mainaleft {
+    font-size: 1.5em;
+}
+.faregular {
+    color: black;
+}
+#mainmain {
+    position: absolute;
+    top: 7vh;
+    width: 40vw;
+    padding: 0 2vw;
+}
+p {
+    height: 300px;
 }
