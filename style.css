@@ -66,6 +66,17 @@ a {
     width: 40vw;
     padding: 0 2vw;
 }
+.customizetitle {
+    text-align: center;
+    margin-top: 1em;
+}
+.customizeparagraph {
+    text-align: center;
+    font-size: 0.9em;
+    padding: 0 1em;
+    color: rgb(97, 95, 95);
+    margin: 0.5em 0;
+}
 .customizediv {
     font-size: 0.8em;
     margin-top: 1.3em;
@@ -82,10 +93,44 @@ a {
     justify-content: space-evenly;
     align-items: center;
 }
-.customizecolordiv {
+.blockfont {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 0;
+}
+.customizefontleft {
+    font-size: 12px;
+}
+.customizefontcenter {
+    width: 70%;
+    height: 3px;
+    background-color: rgba(77, 159, 236, 0.5);
+    padding: 0 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+}
+.fontoptions {
+    height: 12px;
+    width: 12px;
+    border-radius: 50px;
+    background-color: rgb(172, 201, 238);
+    border: none;
+    cursor: pointer;
+    /* box-shadow: 0 0 10px 0; */
+}
+.customizefontright {
+    font-size: 20px;
+}
+.customizecolorbtn {
     height: 50px;
     width: 50px;
     border-radius: 50px;
+    border: none;
+    cursor: pointer;
 }
 .customizethemecolordiv {
     height: 50px;
