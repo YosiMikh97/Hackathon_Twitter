@@ -12,3 +12,20 @@ let customizethemecolordiv = document.getElementsByClassName("customizethemecolo
 for (let i=0; i<themecolors.length; i++) {
     customizethemecolordiv[i].style.backgroundColor = themecolors[i];
 }
+
+let body = document.getElementsByTagName("body")[0];
+customizethemecolordiv[0].addEventListener("click", changethemewhite)
+function changethemewhite() {
+    body.style.backgroundColor = themecolors[0];
+    body.style.color = "black";
+}
+customizethemecolordiv[1].addEventListener("click", changethemedim)
+function changethemedim() {
+    body.style.backgroundColor = themecolors[1];
+    body.style.color = "white";
+}
+customizethemecolordiv[2].addEventListener("click", changethemedark)
+function changethemedark() {
+    body.style.backgroundColor = themecolors[2];
+    body.style.color = "white";
+}
