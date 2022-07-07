@@ -33,3 +33,11 @@ a {
     text-decoration: none;
     color: black;
 }
+#navbar {
+    padding: 2vh;
+}
+
+#navbar div{
+    padding: 2vh;
+}
+
