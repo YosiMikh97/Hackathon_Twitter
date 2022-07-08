@@ -111,7 +111,3 @@ let arrProfiles = [
 {Foto: ,    First name:"Mary", Last name:"Brodersen", Occupation: "Lift truck operator" Location:"Switzerland", Age: 40, Gender: "Female", Followers: 35667}
 {Foto: ,    First name:"Marceline", Last name:"Guzman", Occupation: "Claims investigator" Location:"New Zealand", Age: 65, Gender: "Female", Followers: 534657}]
 
-
-
-
-
