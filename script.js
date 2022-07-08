@@ -109,4 +109,9 @@ let arrProfiles = [
 {Foto: ,    First name:"Julie", Last name:"Winter", Occupation: "Teacher assistant" Location:"Norway", Age: 58, Gender: "Female", Followers: 235790}
 {Foto: ,    First name:"Sierra", Last name:"Ford", Occupation: "Dividend clerk" Location:"Portugal", Age: 37, Gender: "Female", Followers: 34111}
 {Foto: ,    First name:"Mary", Last name:"Brodersen", Occupation: "Lift truck operator" Location:"Switzerland", Age: 40, Gender: "Female", Followers: 35667}
-{Foto: ,    First name:"Marceline", Last name:"Guzman", Occupation: "Claims investigator" Location:"New Zealand", Age: 65, Gender: "Female", Followers: 534657}
+{Foto: ,    First name:"Marceline", Last name:"Guzman", Occupation: "Claims investigator" Location:"New Zealand", Age: 65, Gender: "Female", Followers: 534657}]
+
+
+
+
+
