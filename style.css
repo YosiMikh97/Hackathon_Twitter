@@ -9,15 +9,17 @@ body {
     padding: 0 10vw;
     font-size: 16px;
 }
-section {
-    border: 2px solid black;
+.border {
+    border-left: 1px solid rgb(240, 243, 244);
+    border-right: 1px solid rgb(240, 243, 244);
+    border-bottom: 1px solid rgb(240, 243, 244);
 }
 /*Left navbar*/
 #navbar {
     width: 20vw;
     height: 100vh;
     /* position: fixed; */
-    font-size: 1.5em;
+    font-size: 1.4em;
 }
 a:hover {
     background-color: lightgrey;
@@ -95,11 +97,14 @@ a {
     position: absolute;
     top: 7vh;
     width: 40vw;
+    /* padding: 0 2vw; */
+}
+#customize {
     padding: 0 2vw;
 }
 .customizetitle {
     text-align: center;
-    margin-top: 1em;
+    padding-top: 1em;
 }
 .customizeparagraph {
     text-align: center;

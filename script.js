@@ -18,15 +18,36 @@ for (let i=0; i<themecolors.length; i++) {
 }
 // Theme change
 let body = document.getElementsByTagName("body")[0];
+let a = document.getElementsByTagName("a");
+let customizeSecondTheme = document.querySelectorAll(".customizecolor");
 for (let i=0; i<themecolors.length; i++) {
     customizethemecolordiv[i].addEventListener("click", changetheme)
     function changetheme() {
     body.style.backgroundColor = themecolors[i];
     if (themecolors[i]=="rgb(255, 255, 255)") {
         body.style.color = "black";
-        
+        for (let k=0; k<a.length; k++) {
+            a[k].style.color = "black";
+        }
+        for (let k=0; k<customizeSecondTheme.length; k++) {
+            customizeSecondTheme[k].style.backgroundColor = "rgb(246, 246, 246)";
+        }
+    } else if (themecolors[i]=="rgb(23, 32, 42)") {
+        body.style.color = "white";
+        for (let k=0; k<a.length; k++) {
+            a[k].style.color = "white";
+        }
+        for (let k=0; k<customizeSecondTheme.length; k++) {
+            customizeSecondTheme[k].style.backgroundColor = "rgb(32, 39, 49)";
+        }
     } else {
         body.style.color = "white";
+        for (let k=0; k<a.length; k++) {
+            a[k].style.color = "white";
+        }
+        for (let k=0; k<customizeSecondTheme.length; k++) {
+            customizeSecondTheme[k].style.backgroundColor = "rgb(22, 24, 28)";
+        }
     }
 }
 }
@@ -86,6 +107,28 @@ for (let i=0; i<themecolors.length; i++) {
         shadow.style.boxShadow = "0 0 0 0";
     }
 }
+
+// Hiding Customize section
+let customizeIcon = document.getElementsByClassName("customizeicon")[0];
+let customize = document.getElementById("customize");
+customizeIcon.addEventListener("click", showCustomize);
+function showCustomize() {
+    customize.style.display = "block"
+}
+let customizeHide = document.getElementsByClassName("customizebtn")[0];
+customizeHide.addEventListener("click", hideCustomize);
+function hideCustomize() {
+    customize.style.display = "none"
+}
+
+// // Change button colors
+// let customizeColorChange = document.getElementsByClassName("customizecolorchange");
+// for (let i=0; i<colors.length; i++) {
+//     let customizecolorbtn = document.getElementsByClassName("customizecolorbtn");
+//     for (let k=0; k<customizeColorChange.length; k++) {
+//         customizeColorChange[k].style.backgroundColor = customizecolorbtn[i].style.backgroundColor;
+//     }
+// }
 
 // array prof
 
