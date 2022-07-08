@@ -33,8 +33,16 @@ a:hover {
 .lefttext {
     display: none;
 }
+#texting {
+    border-radius: 40px;
+    padding: 2vh;
+    margin-left: 15%;
 }
-
+}
+img {
+    width: 40px;
+    margin-left: 6vh;
+}
 /*----------------*/
 
 
