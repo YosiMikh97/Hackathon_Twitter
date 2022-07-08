@@ -82,31 +82,31 @@ for (let i=0; i<themecolors.length; i++) {
 
 // array prof
 
-let arrProfiles = [
-{Foto: , First name:"Jhon", Last name:"Dow", Occupation: "Doctor" Location:"USA", Age: 45, Gender: "Male", Followers: 1}
-{Foto: ,    First name:"Andre", Last name:"Shaver", Occupation: "Fire prevention specialist" Location:"Australia", Age: 72, Gender: "Male", Followers: 3900}
-{Foto: ,    First name:"Sean", Last name:"Diaz", Occupation: "School bus driver" Location:"Austria", Age: 42, Gender: "Male", Followers: 6780}
-{Foto: ,    First name:"Tim", Last name:"Eisenberg", Occupation: "Brace maker" Location:"Belgium", Age: 32, Gender: "Male", Followers: 680}
-{Foto: ,    First name:"Dieter", Last name:"Daecher", Occupation: "Bindery machine setter" Location:"Brazil", Age: 55, Gender: "Male", Followers: 1183}
-{Foto: ,    First name:"Bernd", Last name:"Schmid", Occupation: "General practitioner" Location:"Canada", Age: 30, Gender: "Male", Followers: 7886}
-{Foto: ,    First name:"Paul", Last name:"Lane", Occupation: "Card punching machine operator" Location:"Canada", Age: 43, Gender: "Male", Followers: 11187}
-{Foto: ,    First name:"Manuel", Last name:"Olson", Occupation: "Casino cage worker" Location:"Finland", Age: 23, Gender: "Male", Followers: 2280}
-{Foto: ,    First name:"Avenall", Last name:"Durepos", Occupation: "Midshipman" Location:"France", Age: 34, Gender: "Male", Followers: 830}
-{Foto: ,    First name:"Ermenegildo", Last name:"Onio", Occupation: "Prosthetist" Location:"Italy", Age: 39, Gender: "Male", Followers: 83991}
-{Foto: ,    First name:"Valentin", Last name:"Macpherson", Occupation: "Bench technician" Location:"Poland", Age: 50, Gender: "Male", Followers: 7595}
-{Foto: ,    First name:"Rex", Last name:"Tiedemann", Occupation: "Sociologist" Location:"South Africa", Age: 47, Gender: "Male", Followers: 3280}
-{Foto: ,    First name:"Jesse", Last name:"Morgan", Occupation: "Rural mail carrier" Location:"Tunisia", Age: 29, Gender: "Male", Followers: 7345}
-{Foto: ,    First name:"Roger", Last name:"Humphries", Occupation: "Hydrographic surveyor" Location:"Uruguay", Age: 53, Gender: "Male", Followers: 74345}
-{Foto: ,    First name:"Don", Last name:"Schrader", Occupation: "Human resources clerk" Location:"Switzerland", Age: 44, Gender: "Male", Followers: 5445}
-{Foto: ,    First name:"Ashanti", Last name:"Morris", Occupation: "Airline flight engineer" Location:"Australia", Age: 47, Gender: "Female", Followers: 5541}
-{Foto: ,    First name:"Jimmie", Last name:"Harbuck", Occupation: "Compliance officer" Location:"Austria", Age: 25, Gender: "Female", Followers: 56882}
-{Foto: ,    First name:"Jayne", Last name:"Maguire", Occupation: "Library assistant" Location:"Brazil", Age: 39, Gender: "Female", Followers: 111}
-{Foto: ,    First name:"Stella", Last name:"Scott", Occupation: "Bindery machine operator" Location:"Canada", Age: 71, Gender: "Female", Followers: 15611}
-{Foto: ,    First name:"Bonnie", Last name:"Caban", Occupation: "Paper coating machine operator" Location:"Denmark", Age: 33, Gender: "Female", Followers: 156567}
-{Foto: ,    First name:"Laurel", Last name:"Dube", Occupation: "Cardiographer" Location:"Estonia", Age: 56, Gender: "Female", Followers: 6567}
-{Foto: ,    First name:"Jane", Last name:"White", Occupation: "IT manager" Location:"France", Age: 22, Gender: "Female", Followers: 25956}
-{Foto: ,    First name:"Kelly", Last name:"Edwards", Occupation: "Baker" Location:"Greenland", Age: 43, Gender: "Female", Followers: 5477}
-{Foto: ,    First name:"Julie", Last name:"Winter", Occupation: "Teacher assistant" Location:"Norway", Age: 58, Gender: "Female", Followers: 235790}
-{Foto: ,    First name:"Sierra", Last name:"Ford", Occupation: "Dividend clerk" Location:"Portugal", Age: 37, Gender: "Female", Followers: 34111}
-{Foto: ,    First name:"Mary", Last name:"Brodersen", Occupation: "Lift truck operator" Location:"Switzerland", Age: 40, Gender: "Female", Followers: 35667}
-{Foto: ,    First name:"Marceline", Last name:"Guzman", Occupation: "Claims investigator" Location:"New Zealand", Age: 65, Gender: "Female", Followers: 534657}
+// let arrProfiles = [
+// {Foto: , First name:"Jhon", Last name:"Dow", Occupation: "Doctor" Location:"USA", Age: 45, Gender: "Male", Followers: 1}
+// {Foto: ,    First name:"Andre", Last name:"Shaver", Occupation: "Fire prevention specialist" Location:"Australia", Age: 72, Gender: "Male", Followers: 3900}
+// {Foto: ,    First name:"Sean", Last name:"Diaz", Occupation: "School bus driver" Location:"Austria", Age: 42, Gender: "Male", Followers: 6780}
+// {Foto: ,    First name:"Tim", Last name:"Eisenberg", Occupation: "Brace maker" Location:"Belgium", Age: 32, Gender: "Male", Followers: 680}
+// {Foto: ,    First name:"Dieter", Last name:"Daecher", Occupation: "Bindery machine setter" Location:"Brazil", Age: 55, Gender: "Male", Followers: 1183}
+// {Foto: ,    First name:"Bernd", Last name:"Schmid", Occupation: "General practitioner" Location:"Canada", Age: 30, Gender: "Male", Followers: 7886}
+// {Foto: ,    First name:"Paul", Last name:"Lane", Occupation: "Card punching machine operator" Location:"Canada", Age: 43, Gender: "Male", Followers: 11187}
+// {Foto: ,    First name:"Manuel", Last name:"Olson", Occupation: "Casino cage worker" Location:"Finland", Age: 23, Gender: "Male", Followers: 2280}
+// {Foto: ,    First name:"Avenall", Last name:"Durepos", Occupation: "Midshipman" Location:"France", Age: 34, Gender: "Male", Followers: 830}
+// {Foto: ,    First name:"Ermenegildo", Last name:"Onio", Occupation: "Prosthetist" Location:"Italy", Age: 39, Gender: "Male", Followers: 83991}
+// {Foto: ,    First name:"Valentin", Last name:"Macpherson", Occupation: "Bench technician" Location:"Poland", Age: 50, Gender: "Male", Followers: 7595}
+// {Foto: ,    First name:"Rex", Last name:"Tiedemann", Occupation: "Sociologist" Location:"South Africa", Age: 47, Gender: "Male", Followers: 3280}
+// {Foto: ,    First name:"Jesse", Last name:"Morgan", Occupation: "Rural mail carrier" Location:"Tunisia", Age: 29, Gender: "Male", Followers: 7345}
+// {Foto: ,    First name:"Roger", Last name:"Humphries", Occupation: "Hydrographic surveyor" Location:"Uruguay", Age: 53, Gender: "Male", Followers: 74345}
+// {Foto: ,    First name:"Don", Last name:"Schrader", Occupation: "Human resources clerk" Location:"Switzerland", Age: 44, Gender: "Male", Followers: 5445}
+// {Foto: ,    First name:"Ashanti", Last name:"Morris", Occupation: "Airline flight engineer" Location:"Australia", Age: 47, Gender: "Female", Followers: 5541}
+// {Foto: ,    First name:"Jimmie", Last name:"Harbuck", Occupation: "Compliance officer" Location:"Austria", Age: 25, Gender: "Female", Followers: 56882}
+// {Foto: ,    First name:"Jayne", Last name:"Maguire", Occupation: "Library assistant" Location:"Brazil", Age: 39, Gender: "Female", Followers: 111}
+// {Foto: ,    First name:"Stella", Last name:"Scott", Occupation: "Bindery machine operator" Location:"Canada", Age: 71, Gender: "Female", Followers: 15611}
+// {Foto: ,    First name:"Bonnie", Last name:"Caban", Occupation: "Paper coating machine operator" Location:"Denmark", Age: 33, Gender: "Female", Followers: 156567}
+// {Foto: ,    First name:"Laurel", Last name:"Dube", Occupation: "Cardiographer" Location:"Estonia", Age: 56, Gender: "Female", Followers: 6567}
+// {Foto: ,    First name:"Jane", Last name:"White", Occupation: "IT manager" Location:"France", Age: 22, Gender: "Female", Followers: 25956}
+// {Foto: ,    First name:"Kelly", Last name:"Edwards", Occupation: "Baker" Location:"Greenland", Age: 43, Gender: "Female", Followers: 5477}
+// {Foto: ,    First name:"Julie", Last name:"Winter", Occupation: "Teacher assistant" Location:"Norway", Age: 58, Gender: "Female", Followers: 235790}
+// {Foto: ,    First name:"Sierra", Last name:"Ford", Occupation: "Dividend clerk" Location:"Portugal", Age: 37, Gender: "Female", Followers: 34111}
+// {Foto: ,    First name:"Mary", Last name:"Brodersen", Occupation: "Lift truck operator" Location:"Switzerland", Age: 40, Gender: "Female", Followers: 35667}
+// {Foto: ,    First name:"Marceline", Last name:"Guzman", Occupation: "Claims investigator" Location:"New Zealand", Age: 65, Gender: "Female", Followers: 534657}
