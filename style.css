@@ -18,18 +18,23 @@ section {
     /* position: fixed; */
     font-size: 24px;
 }
+a:hover {
+  background-color: lightgrey;
+  border-radius: 8px;
+  padding: 1vh;
+}
 #texting {
     border-radius: 8px;
     padding: 1vh;
     width: 100%;
 }
-/*----------------*/
 @media all and (max-width: 1070px) { 
 .lefttext {
     display: none;
 }
-
 }
+
+/*----------------*/
 
 
 #main {
