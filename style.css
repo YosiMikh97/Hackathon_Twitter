@@ -11,11 +11,18 @@ body {
 section {
     border: 2px solid black;
 }
+/*Left navbar*/
 #navbar {
     width: 20vw;
     height: 100vh;
     /* position: fixed; */
+    font-size: 24px;
 }
+#texting {
+    border-radius: 12%;
+    padding: 1vh 8vh;
+}
+
 #main {
     width: 40vw;
     height: 100vh;
