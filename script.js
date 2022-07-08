@@ -1,5 +1,5 @@
-let fontMinSize = 8;
-let fontStep = 4;
+let fontMinSize = 12;
+let fontStep = 2;
 
 // Color buttons creation
 let colors = ["rgb(77, 159, 236)", "rgb(248, 214, 72)", "rgb(229, 57, 127)", "rgb(115, 87, 246)", "rgb(238, 129, 49)", "rgb(83, 183, 129)"];
@@ -24,6 +24,7 @@ for (let i=0; i<themecolors.length; i++) {
     body.style.backgroundColor = themecolors[i];
     if (themecolors[i]=="rgb(255, 255, 255)") {
         body.style.color = "black";
+        
     } else {
         body.style.color = "white";
     }
@@ -50,6 +51,7 @@ for (let i=0; i<5; i++) {
     function removeshadow() {
         fontOption.style.boxShadow = "0 0 0 0";
     }
+    // Color and font size change
     fontOption.addEventListener("click", changeColor);
     function changeColor(obj) {
         let customizeFont = document.getElementsByClassName("customizefontcenter")[0];
@@ -63,17 +65,6 @@ for (let i=0; i<5; i++) {
         obj.srcElement.style.height = "15px";
         obj.srcElement.style.width = "15px";
         body.style.fontSize = `${obj.srcElement.name}px`;
-
-        //     function removeClick() {
-        //         fontOption.style.backgroundColor = "rgb(172, 201, 238)";
-        //         fontOption.style.height = "12px";
-        //         fontOption.style.width = "12px";
-        //     }
-        //     removeClick()
-        // }
-        // fontOption.style.backgroundColor = "rgb(77, 159, 236)";
-        // fontOption.style.height = "15px";
-        // fontOption.style.width = "15px";
     }
 }
 
