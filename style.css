@@ -30,9 +30,18 @@ a:hover {
     width: 100%;
 }
 @media all and (max-width: 1070px) { 
-.lefttext {
-    display: none;
+    .lefttext {
+        display: none;
+    }
+    #texting {
+        border-radius: 40px;
+        padding: 2vh;
+        margin-left: 15%;
+    }
 }
+img {
+    width: 40px;
+    margin-left: 6vh;
 }
 
 /*----------------*/
