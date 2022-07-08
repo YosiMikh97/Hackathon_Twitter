@@ -19,9 +19,18 @@ section {
     font-size: 24px;
 }
 #texting {
-    border-radius: 12%;
-    padding: 1vh 8vh;
+    border-radius: 8px;
+    padding: 1vh;
+    width: 100%;
 }
+/*----------------*/
+@media all and (max-width: 1070px) { 
+.lefttext {
+    display: none;
+}
+
+}
+
 
 #main {
     width: 40vw;
