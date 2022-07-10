@@ -6,20 +6,21 @@
 }
 body {
     display: flex;
-    padding: 0 10vw;
+    padding: 0 7vw;
     font-size: 16px;
 }
 .border {
     border-left: 1px solid rgb(240, 243, 244);
     border-right: 1px solid rgb(240, 243, 244);
     border-bottom: 1px solid rgb(240, 243, 244);
+    padding: 0 2vw;
 }
-/*Left navbar*/
+/*Left navbar changed 18:00 8 july, copy all*/
 #navbar {
-    width: 20vw;
+    width: 18vw;
     height: 100vh;
-    /* position: fixed; */
     font-size: 1.4em;
+    position: relative;
 }
 a:hover {
     background-color: lightgrey;
@@ -27,9 +28,17 @@ a:hover {
     padding: 1vh;
 }
 #texting {
-    border-radius: 8px;
+    margin-top: 1.7em;
+    border: none;
+    border-radius: 50px;
     padding: 1vh;
-    width: 100%;
+    width: 92%;
+    height: 6vh;
+    background-color: rgb(77, 159, 236);
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 0.8em;
+    cursor: pointer;
 }
 @media all and (max-width: 1070px) { 
     .lefttext {
@@ -41,29 +50,55 @@ a:hover {
         margin-left: 15%;
     }
 }
-img {
+.logo {
     width: 40px;
-    margin-left: 6vh;
+    margin-left: 2vw;
+}
+.footernav {
+    margin-bottom: 3vh;
+    position: fixed;
+    text-align: left;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    padding: 0 2vw;
+}
+#navbar {
+    padding: 2vh;
+}
+.navblock {
+    padding: 2vh;
+}
+.usernameimg {
+    height: 50px;
+    width: 50px;
+}
+.usernamediv {
+    padding: 0;
+    margin: 0;
+}
+.namenav {
+    font-weight: 600;
+}
+.usernamenav {
+    font-size: 0.8em;
 }
 
 /*----------------*/
 
-
 #main {
-    width: 40vw;
+    width: 44vw;
     height: 100vh;
-    overflow: scroll;
     position: relative;
-}
-#right {
-    width: 20vw;
-    height: 100vh;
-    overflow: scroll;
 }
 #mainnav {
     position: fixed;
-    width: 40vw;
-    padding: 0 2vw;
+    width: 44vw;
 }
 .mainnavul {
     display: flex;
@@ -79,14 +114,6 @@ a {
     color: black;
 }
 
-#navbar {
-    padding: 2vh;
-}
-
-#navbar div{
-    padding: 2vh;
-}
-
 .mainaleft {
     font-size: 1.5em;
 }
@@ -96,17 +123,15 @@ a {
 #mainmain {
     position: absolute;
     top: 7vh;
-    width: 40vw;
-    /* padding: 0 2vw; */
+    width: 44vw;
+    overflow: scroll;
+    height: 93vh;
 }
-#customize {
-    padding: 0 2vw;
-}
-.customizetitle {
+.maintitle {
     text-align: center;
     padding-top: 1em;
 }
-.customizeparagraph {
+.mainparagraph {
     text-align: center;
     font-size: 0.9em;
     padding: 0 1em;
@@ -156,7 +181,6 @@ a {
     background-color: rgb(172, 201, 238);
     border: none;
     cursor: pointer;
-    /* box-shadow: 0 0 10px 0; */
 }
 .customizefontright {
     font-size: 20px;
@@ -170,13 +194,14 @@ a {
 }
 .customizethemecolordiv {
     height: 50px;
-    width: 25%;
+    width: 20%;
     border-radius: 10px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     border: none;
     cursor: pointer;
+    padding: 0 10px;
 }
 .customizecircle {
     height: 18px;
@@ -185,7 +210,7 @@ a {
     border: 2px solid rgb(155, 152, 152);
 }
 .customizethemetext {
-    width: 60%;
+    width: 65%;
     font-weight: 600;
 }
 .customizethemetext1, .customizethemetext2 {
@@ -209,4 +234,131 @@ a {
     background-color: rgb(77, 159, 236);
     color: rgb(255, 255, 255);
     font-weight: 600;
+}
+.fa-check {
+    color: #fff;
+    opacity: 0;
+}
+#cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card {
+    display: flex;
+    width: 48%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3px;
+    margin: 5px 0;
+}
+.cardinfo {
+    display: flex;
+    align-items: center;
+}
+.carddesc {
+    padding: 0 5px;
+}
+.name {
+    font-weight: 600;
+}
+.username {
+    color: rgb(97, 95, 95);
+    font-size: 0.8em;
+}
+.cardimg {
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+}
+.cardbutton {
+    border-radius: 50px;
+    border: none;
+    height: 2.2em;
+    width: 4.5em;
+    cursor: pointer;
+}
+/*right side changed 18:00 8 july, copy all**/
+#right {
+    padding: 0 1vw;
+    width: 24vw;
+    height: 100vh;
+}
+.rightmain {
+    overflow: scroll;
+    height: 93vh;
+}
+.searchright {
+    border-radius: 50px;
+    border: none;
+    width: 100%;
+    height: 5vh;
+    font-size: 1em;
+    margin: 5px 0 10px 0;
+    padding: 0 20px;
+}
+.rightTitle {
+    text-align: left;
+    padding: 0.7em 1em 0em 1em;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+
+}
+.accountDiv {
+    margin: 0.8em;
+    padding: 3px;
+}
+.topaccountsmain{
+    display: flex;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.topaccounts {
+    padding: 0.5em 1em;
+    font-size: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.showtopdiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.8em 0;
+}
+.showtopfivediv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0.8em 0;
+}
+.showtopbtn {
+    background-color: none;
+    border: none;
+    cursor: pointer;
+}
+.textcolorchange {
+    color: rgb(77, 159, 236);
+}
+.cardTop {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3px;
+    margin: 5px 0;
+}
+.tags {
+    padding: 0.5em 1.3em;
+    font-size: 1.3em;
+    text-align: left;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.tagdiv {
+    padding: 5px 0;
+}
+.backgroundchange {
+    background-color: rgb(246, 246, 246);
 }
