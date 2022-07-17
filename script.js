@@ -3,6 +3,11 @@ let fontMinSize = 0.750;
 let fontStep = 0.125;
 let customizeFont = document.getElementsByClassName("customizefontcenter")[0];
 let fontoptionsbtn;
+
+// -----------------------
+// the loops need to be inside functions
+// ------------------
+
 for (let i=0; i<5; i++) {
     fontoptionsbtn = document.createElement("button");
     fontoptionsbtn.classList.add("fontoptions");
@@ -10,10 +15,16 @@ for (let i=0; i<5; i++) {
     fontoptionsbtn.setAttribute("name", fontMinSize+i*fontStep);
     customizeFont.appendChild(fontoptionsbtn);
 }
+
 // Font buttons shadows
 for (let i=0; i<5; i++) {
     let fontOption = document.getElementsByClassName("fontoptions")[i];
     fontOption.addEventListener("mouseover", addshadow);
+
+    // ------
+    // you could do the shadow with hover and CSS
+    // ----------
+
     function addshadow() {
         fontOption.style.boxShadow = "0 0 10px 0";
     }
@@ -23,6 +34,11 @@ for (let i=0; i<5; i++) {
     }
     // Color and font size change
     fontOption.addEventListener("click", changeColor);
+
+    // ------------
+    // the best would be to add a class rather than using inline style
+    // ---------------
+
     function changeColor(obj) {
         let customizeFont = document.getElementsByClassName("customizefontcenter")[0];
         for (let k=0; k<5; k++) {
@@ -38,6 +54,8 @@ for (let i=0; i<5; i++) {
     }
 }
 
+
+
 // Color buttons creation
 let colors = ["rgb(77, 159, 236)", "rgb(248, 214, 72)", "rgb(229, 57, 127)", "rgb(115, 87, 246)", "rgb(238, 129, 49)", "rgb(83, 183, 129)"];
 let customizecolor = document.getElementsByClassName("blockcolor")[0];
@@ -51,6 +69,8 @@ for (let i=0; i<colors.length; i++) {
     tick.classList.add("fa-check");
     customizecolorbtn.appendChild(tick);
 }
+
+
 // Change color buttons
 let customizeColorChange = document.getElementsByClassName("customizecolorchange");
 for (let i=0; i<colors.length; i++) {
@@ -97,6 +117,13 @@ let searchColor = document.getElementsByClassName("searchright")[0];
 let customizeSecondTheme = document.querySelectorAll(".customizecolor");
 let rightBackground = document.querySelectorAll(".backgroundchange");
 let borderColor = document.querySelectorAll(".border");
+
+
+// ----------------
+//  too many loops, try to refactor the code to make it clearer and quicker
+// -----------------
+
+
 for (let i=0; i<themecolors.length; i++) {
     customizethemecolordiv[i].addEventListener("click", changetheme)
     function changetheme() {
@@ -223,6 +250,12 @@ let users = [
     {image:"Cristiano_Ronaldo.png", firstName:"Cristiano", lastName:"Ronaldo", userName:"cristiano", followers:465000000}
 ]
 
+// -----------
+// this should be in a function
+// ---------------
+
+
+
 // Cards creation
 document.getElementById("cards").innerHTML = "";
     users.forEach(element => {
@@ -244,6 +277,10 @@ for (let i=0; i<users.length; i++) {
 }
 
 
+//  --------------
+// use const to declare the functions
+// ---------------
+
 // User search
 searchUser = function(searchContent) {
     document.getElementById("cards").innerHTML = "";
@@ -257,6 +294,7 @@ searchUser = function(searchContent) {
         }
     );
 }
+
 search = function() {
     let searchText = document.getElementById("search").value;
     searchUser(searchText);
